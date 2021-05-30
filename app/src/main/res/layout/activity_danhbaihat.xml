@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:id="@+id/coordinatorlayout_danhsachbaihat"
+    tools:context=".Activity.DanhbaihatActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:fitsSystemWindows="true"
+        android:id="@+id/appbarlayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:id="@+id/collapsingToobarLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#64B5F6"
+            android:fitsSystemWindows="true"
+            app:expandedTitleGravity="center|bottom"
+            app:expandedTitleMarginBottom="33dp"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_danhsach"
+                android:layout_width="match_parent"
+                android:background="#EF9A9A"
+                android:layout_height="57dp"
+                android:elevation="6dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.DayNight.ActionBar"></androidx.appcompat.widget.Toolbar>
+
+           <androidx.cardview.widget.CardView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_gravity="center"
+               android:layout_marginTop="80dp"
+               android:layout_marginBottom="50dp"
+               android:elevation="6dp"
+               app:cardCornerRadius="10dp">
+
+               <ImageView
+                   android:id="@+id/imgView_danhsachcakhuc"
+                   android:background="@color/black"
+                   android:layout_width="150dp"
+                   android:layout_height="150dp" />
+
+           </androidx.cardview.widget.CardView>
+
+
+
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        app:layout_anchor="@id/appbarlayout"
+        android:id="@+id/floatingActionButton_dsbaihat"
+        app:fabSize="normal"
+        android:scaleType="fitXY"
+        android:src="@drawable/iconfloatingactionbutton"
+        android:backgroundTint="#FF9800"
+        android:layout_marginRight="20dp"
+        app:layout_anchorGravity="right|bottom|center"
+        app:layout_behavior="@string/bottom_sheet_behavior"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_marginTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/relativeLayout_danhsachbaihat"/>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

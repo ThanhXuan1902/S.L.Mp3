@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="40dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="150dp">
+
+        <View
+            android:background="#FCE4EC"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+        <ImageView
+            android:id="@+id/img_view_background_playlist"
+            android:scaleType="fitXY"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginBottom="10dp"
+            android:elevation="6dp"
+            app:cardCornerRadius="10dp"
+            android:id="@+id/cardview_img_view_background_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/img_view_icon_playlist"
+                android:scaleType="fitXY"
+                android:background="@color/teal_200"
+                android:layout_alignBottom="@id/img_view_background_playlist"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            android:id="@+id/txt_title_playlist"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_alignBottom="@id/cardview_img_view_background_playlist"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/cardview_img_view_background_playlist"
+            android:background="@drawable/shape_bgr_button"
+            android:ellipsize="end"
+            android:fontFamily="sans-serif"
+            android:maxLines="1"
+            android:padding="8sp"
+            android:text="Top 100 Bài Hát Hay Nhất Hàn Quốc"
+            android:textColor="@color/black"
+            android:textColorHighlight="#FF5252"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

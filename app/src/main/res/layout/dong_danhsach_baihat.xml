@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:elevation="5dp"
+    android:layout_margin="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txt_danhsach_baihat_index"
+            android:layout_margin="15dp"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/txt_tênbaihat_danhsach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/txt_danhsach_baihat_index"
+            android:ellipsize="end"
+            android:maxWidth="250dp"
+            android:singleLine="true"
+            android:text="Tên ca khuc"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/txt_ten_casi_danhsachbaihat"
+            android:textColor="#605858"
+            android:fontFamily="sans-serif"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="tên ca si"
+            android:layout_marginLeft="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/txt_danhsach_baihat_index"
+            android:layout_below="@id/txt_tênbaihat_danhsach"/>
+
+        <ImageView
+            android:id="@+id/imgView_luotthich_danhsach_baihat"
+            android:src="@drawable/iconlove"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

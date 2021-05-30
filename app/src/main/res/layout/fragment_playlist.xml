@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/txt_ten_playList"
+        android:fontFamily="sans-serif"
+        android:text="NHỊP ĐẬP TRÁI TIM"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <ListView
+        android:id="@+id/listView_playList"
+        android:layout_below="@+id/txt_ten_playList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:id="@+id/txt_xem_them_playlist"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/listView_playList"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/shape_bgr_button"
+        android:fontFamily="oswald"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:text="Xem thêm playList"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="1"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:id="@+id/txt_playNhac_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:fontFamily="sans-serif"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Tên ca khuc"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/txt_playNhac_index"
+            android:id="@+id/textview_playnhactenbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/textview_tencasi_playNhac"
+            android:layout_below="@id/textview_playnhactenbaihat"
+            android:layout_toRightOf="@id/txt_playNhac_index"
+            android:fontFamily="sans-serif"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:textColor="@color/black"
+            android:text="Tên ca khuc"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
